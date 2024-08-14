@@ -15,10 +15,17 @@ h2{
     color: rgb(124, 22, 22);
 }
 img{
-    width: 500;
     height: auto;
     border-radius: 10%;
 }
 body{
-    color: aqua;
+    background-color: aqua;
+}
+
+button{
+    background-color: orange;
+    color: black;
+}
+input{
+    background-color: orangered;
 }
