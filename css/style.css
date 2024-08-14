@@ -1,11 +1,11 @@
 @media screen and (max-width: 650px) {
     body {
-        background-color: #000;
+        background-color: red;
         color: #FFF;
-        font-family: "Comic Sans MS", "Comic Sans", cursive;
+        font-family: Arial, Helvetica, sans-serif;
     }
 }
 
 h1{
-    color: brown;
+    color: rgb(48, 42, 165);
 }
