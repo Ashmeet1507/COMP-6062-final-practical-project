@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Final Project-1159463</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <head>
+            <h1>Ashmeet Passi-{{ studentID }}</h1>
+        </head>
+        <main>
+            <div>
+                <h2>Random facts</h2>
+                <p>{{ generalFacts }}</p>
+                <button @click="bringNewFacts">New Fact</button>
+            </div>
+            <div>
+                <h2> Weather Today</h2>
+                <p>Location: {{ city }}</p>
+                <p>Temperature: {{ weather.temperature }}</p>
+                <p>Wind: {{ weather.wind }}</p>
+                <p>Description: {{ weather.description }}</p>
+                <input type="text" v-model="city" placeholder="Enter city">
+                <button @click="weatherReport">Get Weather</button>
+            </div>     
+            <div>
+                <h2>Dictionary</h2>
+                <input type="text" v-model="word" placeholder="Enter word">
+                <button @click="wordMeaning">Define</button>
+                <p><strong>{{ definition.word }}</strong> {{ definition.partOfSpeech }}</p>
+                <p>{{ definition.phonetic }}</p>
+                <p>{{ definition.definition }}</p>
+            </div>
+        </main>
+    </div>
+    
+    <script src="https://unpkg.com/vue@3.4.31/dist/vue.global.js"></script>
+    <script src="scripts/app.js"></script>
+     
+</body>
+<footer>
+    Ashmeet Passi
+</footer>   
+</html>
