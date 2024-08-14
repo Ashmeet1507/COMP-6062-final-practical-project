@@ -8,9 +8,17 @@
 
 h1{
     color: rgb(48, 42, 165);
+
 }
 
 h2{
     color: rgb(124, 22, 22);
 }
-
+img{
+    width: 500;
+    height: auto;
+    border-radius: 10%;
+}
+body{
+    color: aqua;
+}
