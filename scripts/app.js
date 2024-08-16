@@ -32,8 +32,7 @@ const app = Vue.createApp({
             },
         weatherReport() {
             fetch(`https://goweather.herokuapp.com/weather/${encodeURIComponent(this.city)}`)
-            //fetch(`https://weather-data.liamstewart.ca/?city=Toronto)}`)
-           // fetch(`https://weather-data.liamstewart.ca/?city=${encodeURIComponent(this.city)}`)
+            
                 .then(response => {
                     return response.json()
                 })
@@ -48,6 +47,7 @@ const app = Vue.createApp({
             },
         wordMeaning() {
             fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(this.word)}`)
+            //fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/Bottle}`)
                 .then(response => {
                     return response.json()
                 })
@@ -62,6 +62,7 @@ const app = Vue.createApp({
                     console.error('Error', error);
                 });
             }
+
         },
         mounted() {
             this.bringNewFacts();  // Load a random fact on page load
