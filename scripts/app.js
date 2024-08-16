@@ -32,6 +32,8 @@ const app = Vue.createApp({
             },
         weatherReport() {
             fetch(`https://goweather.herokuapp.com/weather/${encodeURIComponent(this.city)}`)
+            //fetch(`https://weather-data.liamstewart.ca/?city=Toronto)}`)
+           // fetch(`https://weather-data.liamstewart.ca/?city=${encodeURIComponent(this.city)}`)
                 .then(response => {
                     return response.json()
                 })
@@ -63,7 +65,7 @@ const app = Vue.createApp({
         },
         mounted() {
             this.bringNewFacts();  // Load a random fact on page load
-            this.weatherReport();   // Load weather for London, Ontario on page load
+            this.weatherReport();   // Loading weather for London, Ontario on page load as default
         }
 });
 app.mount('#app');
